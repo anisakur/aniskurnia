@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulir Anggota perpustakaan</h1>
+        <form>
+            <p>NAMA</p>  
+                <input type="text" placeholder="Nama" nama="nama_user"><br> 
+            <p>KOTA LAHIR</p>
+            
+                <input type="text" placeholder="kota lahir" nama="kota lahir" list="kota_lahir">
+            <datalist id="kota_lahir">
+                <option value="Semarang">Semarang</option>
+                <option value="Ungaran">Ungaran</option>
+                <option value="Demak">Demak</option>
+                <option value+="Simbabwe">Simbabwe</option>
+            </datalist> <br>
+        <p>TANGGAL LAHIR</p>
+                <input type="date" name="ttl"><br>
+            <p>GENDER</p>
+                <input type="radio" value="Pria>" name="gander">
+            Pria
+                <input type="radio" value="Wanita" name="gander">
+            Wanita <br>
+            <p> MAKANAN FAFORIT</p>
+                <input type="checkbox" name="Makanan_Favorit" value="Nasi Goreng">Nasi Goreng
+                <input type="checkbox" name="Makanan_Favorit" value="Mie Goreng">Mie Goreng 
+            <br>    
+           <p> AGAMA</p>
+                <select name="AGAMA">
+                    <option value="islam">Islam</option>
+                    <option value="katholik">katholik</option>
+                    <option value="kristen">kristen</option>
+                    <option value="hindu">hindu</option>
+                    <option value="budha">budha</option>
+                    <option value="konghucu">konghucu</option>
+                </select>
+            <br>
+           <p> ALAMAT</p>
+                <textarea name="ALAMAT" cols="20" rows="2"></textarea>
+            <br> 
+            <div class="column">
+                <button>Clear</button>
+                <button>Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
